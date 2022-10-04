@@ -1,8 +1,8 @@
-# Frontend Mentor - FAQ accordion card
+# Frontend Mentor - Article preview component
 
-![Design preview for the FAQ accordion card coding challenge](desktop-preview.jpg)
+![Design preview for the Article preview component coding challenge](desktop-preview.jpg)
 
-This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/MrBlackvanta/Social-proof-section)
-- Live Site URL: [Live](https://social-proof-vanta.netlify.app/)
+- Solution URL: [Github](https://github.com/MrBlackvanta/Article-preview-component)
+- Live Site URL: [Live](https://article-preview-vanta.netlify.app/)
 
 ### Built with
 
