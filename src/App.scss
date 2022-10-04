@@ -1,17 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
 img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
+picture {
   max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 html {
@@ -19,21 +54,12 @@ html {
 }
 
 body {
-  font-family: "League Spartan", sans-serif;
+  text-rendering: optimizeSpeed;
   min-height: 100vh;
-  background-image: url(./images/bg-pattern-top-desktop.svg),
-    url(./images/bg-pattern-bottom-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: top left, bottom right;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem 2rem;
-}
-
-@media only screen and (max-width: 56.25em) {
-  body {
-    background-image: url(./images/bg-pattern-top-mobile.svg),
-      url(./images/bg-pattern-bottom-mobile.svg);
-  }
+  padding: 0 2.5rem;
 }

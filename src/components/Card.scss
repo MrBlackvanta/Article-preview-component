@@ -1,0 +1,85 @@
+@import "./colors";
+
+.card {
+  max-width: 100rem;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: 1.8rem;
+
+  &-hero {
+    width: 38%;
+    -o-object-position: left;
+    object-position: left;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  &-info {
+    padding: 5rem;
+    background-color: $white;
+
+    &-heading {
+      font-size: 2.8rem;
+      line-height: 1.3;
+      color: $very-dark-grayish-blue;
+      margin-bottom: 2rem;
+    }
+
+    &-description {
+      line-height: 1.5;
+      color: $desaturated-dark-blue;
+      margin-bottom: 2rem;
+    }
+
+    &-author {
+      display: flex;
+      align-items: center;
+
+      &-img {
+        width: 6.5rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+      }
+
+      &-details {
+        &-name {
+          color: $very-dark-grayish-blue;
+          font-size: 1.8rem;
+          margin-bottom: 0.9rem;
+        }
+
+        &-date {
+          color: $grayish-blue;
+        }
+
+        &-btn {
+          margin-left: auto;
+          width: 5rem;
+          height: 5rem;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+
+          &-icon {
+            width: 100%;
+            height: 100%;
+            background-color: $desaturated-dark-blue;
+            -webkit-mask: url(../images/icon-share.svg) no-repeat center;
+            mask: url(../images/icon-share.svg) no-repeat center;
+            -webkit-mask-size: 2.2rem;
+            mask-size: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background-color: $very-dark-grayish-blue;
+}
+
+.active-icon {
+  background-color: $light-grayish-blue;
+}
