@@ -19,7 +19,14 @@ function App() {
     button: share,
   };
 
-  function handlePopup() {}
+  function handlePopup() {
+    const btn = document.querySelector(".card-info-author-details-btn");
+    const icon = document.querySelector(".card-info-author-details-btn-icon");
+    const popup = document.querySelector(".popup");
+    btn.classList.toggle("active");
+    icon.classList.toggle("active-icon");
+    popup.classList.toggle("show");
+  }
 
   return (
     <div>

@@ -1,3 +1,6 @@
+import fb from "../images/icon-facebook.svg";
+import twitter from "../images/icon-twitter.svg";
+import pinterest from "../images/icon-pinterest.svg";
 import "./Card.scss";
 
 export default function Card(props) {
@@ -19,7 +22,12 @@ export default function Card(props) {
           />
           <div className="card-info-author-details">
             <h2 className="card-info-author-details-name">{props.fullName}</h2>
-            <p className="card-info-author-details-date">{props.date}</p>
+            <time
+              dateTime={props.date}
+              className="card-info-author-details-date"
+            >
+              {props.date}
+            </time>
           </div>
           <button
             onClick={props.handlePopup}
@@ -27,6 +35,26 @@ export default function Card(props) {
           >
             <div className="card-info-author-details-btn-icon"></div>
           </button>
+          <div className="popup">
+            <p>share</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src={fb} alt="facebook logo" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={twitter} alt="twitter logo" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={pinterest} alt="pinterest logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </article>
