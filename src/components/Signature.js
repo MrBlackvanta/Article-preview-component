@@ -2,7 +2,7 @@ import "./Signature.scss";
 function Signature() {
   return (
     <footer className="attribution">
-      <p role="contentinfo">
+      <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           <span> </span>Frontend Mentor
